@@ -1,7 +1,7 @@
 import { FETCH_CHARACTER_SUCCESS, CLEAR_DATA } from './actions';
 
 const initialState = {
-  characters: [], // Массив для хранения нескольких персонажей
+  characters: [], 
 };
 
 const characterReducer = (state = initialState, action) => {

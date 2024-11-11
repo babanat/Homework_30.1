@@ -10,7 +10,7 @@ const CharacterList = () => {
   const handleGetInfo = () => {
     if (characterId) {
       dispatch(fetchCharacter(characterId));
-      setCharacterId(''); // Очистим поле ввода после отправки
+      setCharacterId(''); 
     }
   };
 

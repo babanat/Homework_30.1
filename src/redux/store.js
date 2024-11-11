@@ -1,7 +1,9 @@
-import { createStore, applyMiddleware } from 'redux';
-import { thunk } from 'redux-thunk';
+import { configureStore } from '@reduxjs/toolkit';
 import characterReducer from './reducers';
 
-const store = createStore(characterReducer, applyMiddleware(thunk));
+const store = configureStore({
+  reducer: characterReducer,
+  middleware: (getDefaultMiddleware) => getDefaultMiddleware(), 
+});
 
 export default store;
